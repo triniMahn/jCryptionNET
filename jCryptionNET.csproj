@@ -64,8 +64,7 @@
     <Content Include="Default.aspx" />
     <Content Include="jCryption.aspx" />
     <Content Include="js\jquery-ajax-helpers.js" />
-    <Content Include="js\jquery.jcryption.3.0.js" />
-    <Content Include="js\lib-typedarrays.js" />
+    <Content Include="js\lib\jquery.jcryption.3.0.js" />
     <Content Include="js\main.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -86,7 +85,10 @@
     <Compile Include="jCryption.aspx.designer.cs">
       <DependentUpon>jCryption.aspx</DependentUpon>
     </Compile>
+    <Compile Include="lib\Keys.cs" />
+    <Compile Include="lib\openSSLFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="lib\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">

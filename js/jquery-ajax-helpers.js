@@ -1,4 +1,16 @@
-﻿//methodName: should be in form PageName.aspx/MethodName
+﻿/*
+* jQuery Ajax Call Wrappers
+* Mostly, for use with ASP.NET WebMethods
+* 
+* Copyright (c) 2013 Ren Ramkhelawan
+* MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*
+* If you need any further information about this script please
+* visit my homepage or contact me under ren@arkitekt.ca
+*/
+
+//methodName: should be in form PageName.aspx/MethodName
 //parms: should be in form "{'parm1':'value1', 'parm2':'value2'}"
 function jQueryCallWrapper(methodName, parms, successFunc, errorFunc, successFuncParm) {
     var parmString = formatParmsForPost(parms);
@@ -25,7 +37,7 @@ function jQueryCallWrapper(methodName, parms, successFunc, errorFunc, successFun
 //methodName: should be in form PageName.aspx/MethodName
 //parms: should be in form parmName=%22input%22 (%22 = quotation marks)
 //25/07/2011: simplified this function according to: http://encosia.com/save-yourself-some-typing-when-you-call-asp-net-services/
-function jQueryCallWrapperREST(methodName, parms, successFunc, errorFunc, successFuncParm) {
+function jQueryCallWrapperGET(methodName, parms, successFunc, errorFunc, successFuncParm) {
     var parmString = formatParmsForQueryString(parms);
     $.ajax({
         type: "GET",
@@ -109,4 +121,10 @@ function jQueryCallWrapperDTO(methodName, DTO, successFunc, errorFunc, successFu
             }
         }*/
     });
+}
+
+function genAjaxErrorFunc(response) {
+    var error = response.d;
+    console.log(error);
+    //alert(error);
 }
