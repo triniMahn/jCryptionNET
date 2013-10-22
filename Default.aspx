@@ -7,6 +7,8 @@
     <title></title>
 </head>
 <body>
+    <form id="form1" runat="server">
+    </form>
     <p id="status"><span style="font-size: 16px;">Encrypting channel ...</span></p>
     String:
         <input type="text" id="text" disabled="disabled" />
@@ -20,7 +22,7 @@
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="/js/jquery-ajax-helpers.js"></script>
     <script type="text/javascript" src="/js/lib/jquery.jcryption.3.0.js"></script>
-    <script type="text/javascript" src="/js/lib/lib-typedarrays.js"></script>
+    
     <script type="text/javascript" src="/js/main.js"></script>
 </body>
 </html>

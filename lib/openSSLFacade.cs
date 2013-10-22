@@ -101,7 +101,7 @@ namespace jCryptionNET.lib
             {
                 byte[] input = lib.Utils.stringToByteArray(data);
                 byte[] result = rsa.PublicEncrypt(input, OpenSSL.Crypto.RSA.Padding.PKCS1);
-                encryptedString = lib.Utils.byteArrayToString(result);
+                encryptedString = Convert.ToBase64String(result);//lib.Utils.byteArrayToString(result);
             }
 
             return encryptedString;

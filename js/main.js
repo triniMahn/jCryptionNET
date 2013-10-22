@@ -1,9 +1,9 @@
 ﻿$(function () {
 
-    var password = $.jCryption.encrypt("XXXX", "trubo");
+    //var password = $.jCryption.encrypt("XXXX", "trubo");
     //Can use a "static" password as well, but you'll have left a significant chink in your armour.
     //Doing so, however, does allow you to decrypt data at a later date.
-    //var password = 'mypassword2013'
+    var password = 'mypassword2013'
     
     $.jCryption.authenticate(password, "/jCryption.aspx/getPublicKey", "/jCryption.aspx/handshake", function (AESKey) {
         $("#text,#encrypt,#decrypt,#serverChallenge").attr("disabled", false);
