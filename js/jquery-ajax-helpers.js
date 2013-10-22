@@ -7,7 +7,7 @@
 * http://www.opensource.org/licenses/mit-license.php
 *
 * If you need any further information about this script please
-* visit my homepage or contact me under ren@arkitekt.ca
+* visit my homepage or contact me at ren@arkitekt.ca
 */
 
 //methodName: should be in form PageName.aspx/MethodName
