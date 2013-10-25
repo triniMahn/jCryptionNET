@@ -9,6 +9,7 @@ Introduction
 jCryption is a great jQuery plug-in, created by Daniel Griesser, that allows one to encrypt data using JavaScript prior to submission to the server.
 The library and sample implementation provided by the author was originally coded in PHP.
 I needed the bi-directional functionality to operate in a .NET application, and so, I "ported" the PHP implementation to C#.
+The sample application provided in this repository is an ASP.NET Web Application.
 
 To Do -- Before Running
 -----------------------
